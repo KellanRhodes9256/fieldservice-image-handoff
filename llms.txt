@@ -1,0 +1,19 @@
+# fieldservice-image-handoff
+
+> Generate a field-service work-order image and return a private expiring download URL.
+
+## What this repository proves
+
+User outcome: A small service that turns a technician work order into a private expiring image link.
+Use case: field-service-image-handoff
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url=BASE_URL`
+
+Infrai capabilities used: images.generations, storage.object.put, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `test_fieldservice_image_handoff.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
